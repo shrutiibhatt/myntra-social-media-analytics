@@ -2,12 +2,7 @@
 
 A social media analytics project for Myntra, India's fashion e-commerce platform, completed as part of the Internshala Digital Marketing course. It analyses 300 posts and 50 weeks of platform data across Facebook, Instagram, Twitter (X) and YouTube to answer which content, platforms and campaigns work best.
 
-**Author:** [Your name] · **Course:** Internshala Digital Marketing · **Walkthrough video:** [add your video link]
-
-## How this was made
-
-- **The analysis (Tasks 1-6) is my own work**, built in Excel: data cleaning, engagement analysis, platform comparison, hashtag and content strategy, campaign effectiveness, and follower retention. The video walkthrough is in my own words.
-- **The dashboards were built with AI help.** After the course project was submitted, I used Claude (Anthropic) to turn my cleaned data into the two dashboard files below. I reviewed the figures against my own analysis.
+**Author:** Shruti Bhatt · **Course:** Internshala Digital Marketing
 
 ## What's in this repo
 
@@ -22,7 +17,7 @@ A social media analytics project for Myntra, India's fashion e-commerce platform
 | `Myntra_Social_Media_Dashboard.xlsx` | Formula-driven dashboard with Platform and Campaign dropdown filters |
 | `Myntra_Dashboard.html` | Interactive web dashboard with a platform filter (open in any browser) |
 
-## Key findings
+## Key findings (from the dashboard data)
 
 - **Instagram leads.** It has the highest average post engagement rate (19.3%) and the most net new followers (48,004).
 - **Facebook gets the most ad spend but returns the least.** It converts spend into 25.8 net followers per 1,000 spent, against 41.2 on Instagram.
@@ -34,7 +29,7 @@ A social media analytics project for Myntra, India's fashion e-commerce platform
 ## Method and caveats
 
 - **Engagement rate** = (Likes + Shares + Comments) / Impressions. The dashboards show both the average of per-post rates and the pooled rate (total engagement / total impressions).
-- **Net followers** = New followers minus unfollows. The supplied `Total_Followers` column jumps erratically from week to week, so the dashboards do not use it.
+- **Net followers** = New followers minus unfollows. The supplied `Total_Followers` column jumps erratically from week to week, so the dashboards do not use it. The follower figures in Tasks 5 and 6 were derived from `Total_Followers`, so they will not match the dashboard's net-follower numbers.
 - **Campaign tags and dates don't line up.** Posts carry a campaign tag, but post dates span the whole year regardless of campaign dates. Post-based and date-window campaign figures measure different things.
 - **Outliers.** A few posts with very low impressions have engagement rates above 100%. They are kept in the data and the pooled rate is shown alongside the average.
 - **Small samples.** Each content type × platform combination has about 12 posts, so those comparisons are directional, not statistically tested.
@@ -44,3 +39,7 @@ A social media analytics project for Myntra, India's fashion e-commerce platform
 ## Data
 
 The dataset comes from the course project materials and appears to be synthetic. Findings describe this dataset and should not be read as statements about Myntra's real performance.
+
+## Tools
+
+Analysis (Tasks 1-6) built in Microsoft Excel. The two dashboard files were generated with Claude (Anthropic) from the cleaned Task 1 data.
